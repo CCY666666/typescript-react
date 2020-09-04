@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+}
+.content-left{
+  height: 100vh;
+  width: 20%;
+}
+.content-right{
+  width: 80%;
+}
