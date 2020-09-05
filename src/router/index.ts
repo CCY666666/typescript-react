@@ -1,17 +1,18 @@
-import Other from '@/page/other'
+
 import getAsyncComponent from './asyncImport';
 
-const Home = getAsyncComponent(()=>import('@/page/home'))
+const Login = getAsyncComponent(()=>import('@/page/login'))
 const Persion = getAsyncComponent(()=>import('@/page/persion'))
+const Home = getAsyncComponent(()=> import('@/page/home'))
 
 const routes = [
     {
-      path: '/home',
-      component: Home
+      path: '/login',
+      component: Login
     },
     {
       path: '',
-      component: Other,
+      component: Home,
       routes: [
         {
           path: '/persion',
